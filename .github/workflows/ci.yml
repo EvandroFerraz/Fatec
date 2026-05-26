@@ -1,15 +1,15 @@
 name: CI Pipeline - Calculadora Java
-
+ 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
   workflow_dispatch:
-
+ 
 jobs:
   build-and-test:
-    name: Build, Test e Analise
+    name: Build, Test e Análise
     runs-on: ubuntu-latest
  
     steps:
@@ -34,7 +34,7 @@ jobs:
  
       - name: Executar testes unitários
         run: mvn test
-
+ 
       - name: Empacotar aplicação (JAR)
         run: mvn package -DskipTests
  
