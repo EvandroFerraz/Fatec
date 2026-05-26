@@ -1,4 +1,3 @@
-// primeiro teste
 import org.junit.jupiter.api.Test;
 
 import fatec.Calculadora;
